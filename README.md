@@ -1,35 +1,33 @@
+# Cisco CCNA (200-301 v2.0) Networking Portfolio & Study Lab
 
-# Cisco CCNA (200-301) Networking Portfolio & Study Lab
-
-A structured repository of technical notes, configuration blueprints, Packet Tracer lab topologies, and student reference guides mapped to the Cisco Certified Network Associate (CCNA 200-301) curriculum.
+A structured repository of technical blueprints, Packet Tracer lab topologies, diagnostic workflows, and AI-assisted network operations guides mapped directly to the **Cisco Certified Network Associate (CCNA 200-301 v2.0)** blueprint.
 
 ---
 
 ## 📚 Curriculum & Repository Navigation
 
-| Domain | Focus Topics | Artifacts & Reference |
-| :--- | :--- | :--- |
-| **[00-student-resources](./00-student-resources/)** | Lab setup, CLI navigation, initial device hardening | Setup Guides, CLI Cheat Sheets |
-| **[01-network-fundamentals](./01-network-fundamentals/)** | TCP/IP vs OSI, IPv4/IPv6 subnetting, cabling, frame anatomy | Addressing Sheets, Architecture Notes |
-| **[02-switching-lan](./02-switching-lan/)** | VLANs, 802.1Q trunks, RSTP/STP root bridges, EtherChannel | L2 Topologies, Switch Configs |
-| **[03-routing-technologies](./03-routing-technologies/)** | Single/Multi-Area OSPFv2, static/floating routes, inter-VLAN | Routing Tables, CLI Snippets |
-| **[04-ip-services](./04-ip-services/)** | NAT/PAT, DHCP Relay, NTP, DNS, Syslog, SNMP | Service Templates, Blueprints |
-| **[05-security-fundamentals](./05-security-fundamentals/)** | Standard/Extended ACLs, Port Security, DAI, DHCP Snooping | Security Baseline Scripts |
-| **[06-network-automation](./06-network-automation/)** | REST APIs, JSON/YAML payloads, Ansible basics, Cisco DNA Center | Python Scripts, API Blueprints |
-| **[packet-tracer-labs](./packet-tracer-labs/)** | End-to-end troubleshooting scenarios & lab challenges | `.pkt` / `.pka` Labs & Solutions |
+| Domain | Exam Weight | Core Focus Topics | Key Artifacts |
+| :--- | :---: | :--- | :--- |
+| **[00-student-resources](./00-student-resources/)** | — | Lab setup, CLI navigation modes, Subnetting Matrix guides, VLAN references | Onboarding PDFs, Cheat Sheets |
+| **[01-network-infrastructure-connectivity](./01-network-infrastructure-connectivity/)** | 25% | Cable/interface diagnostics (copper/fiber), VMs vs containers, IPv4/IPv6 subnetting, wireless RF/principles, client reachability, DHCPv4 relay | Addressing Sheets, Cabling Specs |
+| **[02-switching-network-access](./02-switching-network-access/)** | 25% | 802.1Q trunks, LACP EtherChannel, SVIs, edge-host port attributes (PoE, VoIP, APs, IoT), CDP/LLDP discovery, Rapid PVST+ | Switch Configs, STP Topologies |
+| **[03-ip-routing](./03-ip-routing/)** | 20% | Routing table analysis, IPv4/IPv6 static & floating routes, single-area OSPFv2/OSPFv3, FHRP redundancy (HSRP/VRRP) | OSPF Labs, Route Tables |
+| **[04-network-services-security](./04-network-services-security/)** | 20% | AAA (TACACS+/RADIUS), SFTP/SCP, NAT/PAT, DNS diagnostics, IPsec VPNs, ACLs, Layer 2 security (DAI, DHCP Snooping, Port Security) | Security Baselines, NAT Configs |
+| **[05-ai-network-operations-management](./05-ai-network-operations-management/)** | 10% | Agentic AI in NetOps, GenAI prompt engineering, cloud-managed networking (Meraki), SNMP, Ansible automation, Syslog analysis | AI Prompt Templates, Meraki Labs, Ansible Playbooks |
+| **[packet-tracer-labs](./packet-tracer-labs/)** | — | End-to-end troubleshooting scenarios, multi-domain break-fix challenges | `.pkt` / `.pka` Topologies & Guides |
 
 ---
 
-## 🛠️ Lab Environment & Tools
-- **Simulation Platforms:** Cisco Packet Tracer (v8.x+)
-- **Terminal Emulators:** Git Bash, PuTTY, SecureCRT
-- **Editor:** Sublime Text / VS Code
+## 🛠️ Lab Environment & Operational Tools
+* **Simulation Platforms:** Cisco Packet Tracer (v8.x+), Cisco Meraki Dashboard
+* **Terminal & Automation:** Git Bash, Sublime Text, Ansible, Python
+* **Diagnostic & AI Frameworks:** Agentic Network Assistants, LLM Prompt Workflows, Syslog/SNMP Collectors
 
 ---
 
-## 📝 Troubleshooting & Methodology
-Every lab walkthrough emphasizes a systematic, foundational troubleshooting framework:
-1. **Physical & Data Link Verification:** Check interface states (`show ip interface brief`, speed/duplex, cable status).
-2. **L2 Domain Isolation:** Verify VLAN tagging, trunk encapsulation, STP states, and port assignments.
-3. **L3 Path & Routing:** Confirm subnetting, default gateways, routing tables (`show ip route`), and neighbor adjacencies.
-4. **Services & Filtering:** Audit ACL placements, NAT overload pools, and DHCP bindings.
+## 📝 Systematic Troubleshooting Methodology
+Every lab walkthrough adheres to a structured, foundational diagnosis process:
+1. **Physical & Cable Layer:** Verify interface statuses (`show ip interface brief`), transceiver signal levels, copper/fiber integrity, and speed/duplex negotiation.
+2. **Layer 2 Access & Discovery:** Validate VLAN assignments, 802.1Q encapsulation, STP root paths, and neighbor discovery via CDP/LLDP.
+3. **Layer 3 Forwarding & Redundancy:** Inspect routing tables (`show ip route`), default route paths, OSPF neighbor states, and FHRP active/standby roles.
+4. **Security & Services:** Verify DHCP pools/relays, NAT translation tables, DNS resolution, and L2 security filters (DHCP snooping, DAI, ACLs).
